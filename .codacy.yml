@@ -2,5 +2,5 @@
 engines:
   spotbugs:
     modules:
-      - classesDirectories: [ "/target/classes" ]
-        sourceDirectories:  [ "/src/main" ]
+      - classesDirectories: [ "target/classes" ]
+        sourceDirectories:  [ "src/main" ]
