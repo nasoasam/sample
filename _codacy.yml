@@ -1,6 +1,0 @@
----
-engines:
-  spotbugs:
-    modules:
-      - classesDirectories: [ "target/classes" ]
-        sourceDirectories:  [ "src/main" ]
