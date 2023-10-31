@@ -1,5 +1,5 @@
 engines:
-  spotbugs:
+  spotbrugs:
     modules:
       - classesDirectories: [ "/home/runner/work/sample/sample/target/classes" ]
         sourceDirectories:  [ "/home/runner/work/sample/sample/src/main" ]
