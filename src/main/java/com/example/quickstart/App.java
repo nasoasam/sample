@@ -1,5 +1,9 @@
 package com.example.quickstart;
 
+import java.io.UnsupportedEncodingException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 /**
  * Hello world!
  *
@@ -7,7 +11,27 @@ package com.example.quickstart;
 public class App 
 {
     public static void main( String[] args )
-    {
+    {String password = "aaa";
+    	MessageDigest md = null;
+		try {
+			md = MessageDigest.getInstance("SHA-256");
+		} catch (NoSuchAlgorithmException e) {
+			// TODO 自動生成された catch ブロック
+			e.printStackTrace();
+		}
+    	byte[] resultBytes;
+		try {
+			resultBytes = md.digest(password.getBytes("UTF-8"));
+		} catch (UnsupportedEncodingException e) {
+			// TODO 自動生成された catch ブロック
+			e.printStackTrace();
+		}
+
+    	StringBuilder stringBuilder = new StringBuilder();
+    	for(byte b :resultBytes) {
+    	    stringBuilder.append( Integer.toHexString( b & 0xFF ) );
+    	}
+
         System.out.println( "Hello World!!" );
          int a;
          String s;
@@ -31,4 +55,5 @@ public class App
     public static Boolean b() {
     	return null;
     }
+    
 }
