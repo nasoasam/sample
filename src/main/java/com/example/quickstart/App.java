@@ -10,7 +10,8 @@ public class App
     {
         System.out.println( "Hello World!!" );
          int a;
-        System.out.println( "Hello Wor" + "ld!!" + 1 );
+         String s;
+        System.out.println( "Hello Wor" + "ld!!" + b() );
         System.out.println( "Hello World!!" );
          a = 2;
          a++;
@@ -26,5 +27,8 @@ public class App
     public static int a(int ab) {
     	ab = 1;
     	return ab;
+    }
+    public static Boolean b() {
+    	return null;
     }
 }
