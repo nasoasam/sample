@@ -19,7 +19,7 @@ public class App
 			// TODO 自動生成された catch ブロック
 			e.printStackTrace();
 		}
-    	byte[] resultBytes;
+    	byte[] resultBytes = null;
 		try {
 			resultBytes = md.digest(password.getBytes("UTF-8"));
 		} catch (UnsupportedEncodingException e) {
