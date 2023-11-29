@@ -18,7 +18,7 @@ jobs:
       - name: Build with Maven
         run: |
           mvn --batch-mode --update-snapshots verify
-          ls ~/.m2/
+          ls ~/.m2/repository
       - name: Run Codacy Analysis CLI
         uses: codacy/codacy-analysis-cli-action@master
         with:
