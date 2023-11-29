@@ -27,6 +27,21 @@ public class App
 			e.printStackTrace();
 		}
 
+    	MessageDigest md2 = null;
+		try {
+			md = MessageDigest.getInstance("SHA-256");
+		} catch (NoSuchAlgorithmException e) {
+			// TODO 自動生成された catch ブロック
+			e.printStackTrace();
+		}
+    	byte[] resultBytes2 = null;
+		try {
+			resultBytes2 = md2.digest(password.getBytes("UTF-8"));
+		} catch (UnsupportedEncodingException e) {
+			// TODO 自動生成された catch ブロック
+			e.printStackTrace();
+		}
+		
     	StringBuilder stringBuilder = new StringBuilder();
     	for(byte b :resultBytes) {
     	    stringBuilder.append( Integer.toHexString( b & 0xFF ) );
