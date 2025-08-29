@@ -19,7 +19,7 @@ jobs:
         run: |
           mvn --batch-mode --update-snapshots verify
       - name: Run Codacy Analysis CLI
-        uses: codacy/codacy-analysis-cli-action@master
+        uses: codacy/codacy-analysis-cli-action@eb58a98ee4f6df1f874e169f0ab39c77558fcc87
         with:
           tool: checkstyle
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
