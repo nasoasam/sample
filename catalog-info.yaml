@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sample-service # Backstage上のカタログ内で一意であれば問題ない
+  annotations:
+    github.com/project-slug: nasoasam/sample
+    # github.com/project-slug: <GitHub Organization名>/<リポジトリ名> # Organization利用の場合は1行上をコメントアウトし、こちらを有効化
+spec:
+  type: service
+  owner: guests
+  lifecycle: experimental
