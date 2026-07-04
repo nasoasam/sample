@@ -44,14 +44,14 @@ public class App
 		
     	StringBuilder stringBuilder = new StringBuilder();
     	for(byte b :resultBytes) {
-    	    stringBuilder.append( Integer.toHexString( b & 0xFF ) );
+//    	    stringBuilder.append( Integer.toHexString( b & 0xFF ) );
     	}
 
         System.out.println( "Hello World!!" );
          int a;
          String s;
         System.out.println( "Hello Wor" + "ld!!!" + b() );
-        System.out.println( "Hello World!!!!" );
+        System.out.println( "Hello Worddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddld!!!" );
          a = 2;
          a++;
          a += a(a);
@@ -64,7 +64,7 @@ public class App
         System.out.println( "Hello World!!" );
     }
     public static int a(int ab) {
-    	ab = 1;
+    	//ab = 1;
     	return ab;
     }
     public static Boolean b() {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FindBugsFilter>
   <Match>
-    <Bug pattern="BAD_HEXA_CONVERSION"/>
+    <Bug pattern="NP_NULL_ON_SOME_PATH_EXCEPTION"/>
   </Match>
 </FindBugsFilter>
